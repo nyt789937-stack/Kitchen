@@ -5,140 +5,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitchen Ustaad - Precision Modular Kitchens in Patna</title>
-    
-    <!-- Tailwind CSS Framework -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS Styling -->
     <style>
-        body { 
-            background-color: #000000; 
-            font-family: 'Outfit', sans-serif; 
-            color: #d1d5db; 
-        }
-        
-        /* Luxury Gold Text Gradient */
-        .luxury-gradient-text { 
-            background: linear-gradient(to right, #D4AF37, #F1E5AC, #C49B06); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-        }
-        
-        /* WhatsApp Button Hover Effect */
-        .whatsapp-capsule { 
-            background: #25D366; 
-            transition: all 0.3s ease; 
-        }
-        .whatsapp-capsule:hover { 
-            transform: scale(1.05); 
-            box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4); 
-        }
-        
-        /* Floating Call Button Effect */
-        .glass-call-btn { 
-            background: rgba(0, 92, 229, 0.9); 
-            backdrop-filter: blur(8px); 
-            border: 1px solid rgba(255, 255, 255, 0.2); 
-            transition: all 0.3s ease; 
-        }
-        .glass-call-btn:hover {
-            transform: scale(1.1);
-        }
-
-        /* Auto-Slider Animation Classes */
-        .hero-slide, .expertise-slide { 
-            transition: opacity 1.5s ease-in-out; 
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            opacity: 0; 
-            object-fit: cover;
-        }
+        body { background-color: #000000; font-family: 'Outfit', sans-serif; color: #d1d5db; }
+        .luxury-gradient-text { background: linear-gradient(to right, #D4AF37, #F1E5AC, #C49B06); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .whatsapp-capsule { background: #25D366; transition: all 0.3s ease; }
+        .whatsapp-capsule:hover { transform: scale(1.05); box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4); }
+        .glass-call-btn { background: rgba(0, 92, 229, 0.9); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; }
+        .glass-call-btn:hover { transform: scale(1.1); }
+        .hero-slide, .expertise-slide { transition: opacity 1.5s ease-in-out; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; object-fit: cover; }
     </style>
 </head>
 <body class="antialiased pb-24">
 
-    <!-- Top Navigation Bar -->
+    <!-- Top Navigation -->
     <header class="fixed top-0 w-full z-50 bg-black/85 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-12 py-4">
-            <!-- Logo -->
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
             <div class="text-xl md:text-2xl font-bold uppercase tracking-widest text-white">
                 Kitchen <span class="luxury-gradient-text">Ustaad</span>
             </div>
-            
-            <!-- Map Button -->
-            <a href="https://maps.app.goo.gl/x8Tq3B8mZ72Jt4oVA" target="_blank" rel="noopener noreferrer" 
-               class="border border-[#D4AF37] text-[#D4AF37] font-bold text-[10px] md:text-xs uppercase px-5 py-2 rounded-full hover:bg-[#D4AF37]/10 transition-colors flex items-center gap-2">
+            <a href="https://maps.app.goo.gl/x8Tq3B8mZ72Jt4oVA" target="_blank" class="border border-[#D4AF37] text-[#D4AF37] font-bold text-[10px] md:text-xs uppercase px-5 py-2 rounded-full hover:bg-[#D4AF37]/10 flex items-center gap-2">
                 <span class="material-symbols-outlined text-[16px]">location_on</span>
-                <span>Find on Map</span>
+                <span class="hidden sm:inline">Find on Map</span><span class="sm:hidden">Map</span>
             </a>
         </div>
     </header>
 
-    <!-- 1. Hero Section (Auto-Advancing Slider) -->
+    <!-- Hero Section (Using Web Links so they work instantly) -->
     <section class="relative h-[85vh] w-full overflow-hidden mt-[72px]">
-        
-        <!-- Hero Images -->
         <div id="hero-slider" class="relative w-full h-full bg-black">
-            <!-- Using Unsplash premium placeholders for immediate beautiful rendering -->
             <img class="hero-slide opacity-100" src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070&auto=format&fit=crop" alt="Luxury Kitchen 1">
             <img class="hero-slide" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Luxury Kitchen 2">
             <img class="hero-slide" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop" alt="Luxury Kitchen 3">
         </div>
-        
-        <!-- Dark Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 pointer-events-none"></div>
-        
-        <!-- Hero Text & WhatsApp Button -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10"></div>
         <div class="absolute inset-0 z-20 flex flex-col items-center justify-between text-center px-6 py-16">
             <h1 class="text-5xl md:text-7xl font-bold text-white mt-12 drop-shadow-2xl max-w-4xl leading-tight">
                 Modular <span class="luxury-gradient-text drop-shadow-2xl">Kitchens</span> in Patna
             </h1>
-            
-            <a href="https://api.whatsapp.com/send/?phone=%2B918102832989" target="_blank" 
-               class="whatsapp-capsule text-white font-bold px-8 py-4 rounded-full flex items-center gap-3 text-sm md:text-base uppercase tracking-widest shadow-2xl mb-8">
+            <a href="https://api.whatsapp.com/send/?phone=%2B918102832989" target="_blank" class="whatsapp-capsule text-white font-bold px-8 py-4 rounded-full flex items-center gap-3 text-sm md:text-base uppercase tracking-widest shadow-2xl mb-8">
                 <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg> 
                 Connect on WhatsApp
             </a>
         </div>
     </section>
 
-    <!-- 2. Why Choose Us -->
-    <section class="py-16 px-6 max-w-5xl mx-auto">
-        <h2 class="text-3xl text-center mb-10 font-medium text-white">Why <span class="font-bold luxury-gradient-text">Choose Us</span></h2>
-        <div class="border border-[#D4AF37]/30 p-8 bg-[#0a0a0a] rounded-xl shadow-[0_0_20px_rgba(212,175,55,0.05)]">
-            <div class="grid grid-cols-3 gap-4 md:gap-8 text-center items-start">
-                <div class="flex flex-col items-center">
-                    <span class="material-symbols-outlined text-4xl text-[#D4AF37] mb-4">diamond</span>
-                    <h3 class="text-[10px] md:text-sm font-bold uppercase text-[#D4AF37] tracking-widest">Durability</h3>
-                </div>
-                <div class="flex flex-col items-center">
-                    <span class="material-symbols-outlined text-4xl text-[#D4AF37] mb-4">explore</span>
-                    <h3 class="text-[10px] md:text-sm font-bold uppercase text-[#D4AF37] tracking-widest">Precision Design</h3>
-                </div>
-                <div class="flex flex-col items-center">
-                    <span class="material-symbols-outlined text-4xl text-[#D4AF37] mb-4">handyman</span>
-                    <h3 class="text-[10px] md:text-sm font-bold uppercase text-[#D4AF37] tracking-widest">Installation</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Our Expertise (Auto-Advancing Slider) -->
-    <section class="py-8 px-6 max-w-5xl mx-auto">
+    <!-- Expertise Section (Using Web Links) -->
+    <section class="py-12 px-6 max-w-5xl mx-auto">
         <div class="mb-10 text-center">
             <h2 class="text-3xl text-white font-medium">Our <span class="font-bold luxury-gradient-text">Expertise</span></h2>
         </div>
-        
-        <div class="relative w-full h-[50vh] md:h-[60vh] overflow-hidden rounded-xl border border-gray-800 shadow-2xl bg-[#111]">
+        <div class="relative w-full h-[50vh] overflow-hidden rounded-xl border border-gray-800 shadow-2xl bg-[#111]">
             <div id="expertise-slider" class="relative w-full h-full">
-                <!-- Slides with Labels -->
                 <div class="expertise-slide opacity-100">
                     <img src="https://images.unsplash.com/photo-1556185781-a47769abb7ee?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover">
                     <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 text-center">
@@ -157,25 +77,18 @@
                         <h3 class="text-lg font-bold uppercase text-white tracking-[0.3em]">Island</h3>
                     </div>
                 </div>
-                <div class="expertise-slide">
-                    <img src="https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover">
-                    <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 text-center">
-                        <h3 class="text-lg font-bold uppercase text-white tracking-[0.3em]">Parallel</h3>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. Client Handovers Grid (Images from your Tablet) -->
+    <!-- Client Handovers Grid -->
     <section class="py-16 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-12">
             <h2 class="text-4xl text-white font-medium">Client <span class="font-bold luxury-gradient-text">Handovers</span></h2>
             <p class="text-gray-400 mt-3 text-sm uppercase tracking-widest">Real Projects Across Bihar</p>
         </div>
         
-        <!-- 2 Columns on Mobile, 5 on Desktop. Uses exact file names you uploaded -->
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
             <div class="rounded-lg overflow-hidden aspect-[4/5] bg-[#111] border border-gray-800"><img src="unnamed.webp" class="w-full h-full object-cover"></div>
             <div class="rounded-lg overflow-hidden aspect-[4/5] bg-[#111] border border-gray-800"><img src="unnamed%20(1).webp" class="w-full h-full object-cover"></div>
             <div class="rounded-lg overflow-hidden aspect-[4/5] bg-[#111] border border-gray-800"><img src="unnamed%20(2).webp" class="w-full h-full object-cover"></div>
@@ -189,58 +102,33 @@
         </div>
     </section>
 
-    <!-- Floating Contact Cluster (Bottom Right) -->
+    <!-- Floating Contact Cluster -->
     <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-center gap-4">
-        <!-- Call Button -->
-        <a href="tel:+918102832989" class="glass-call-btn w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg">
-            <span class="material-symbols-outlined text-2xl">call</span>
-        </a>
-
-        <!-- WhatsApp Button -->
-        <a href="https://api.whatsapp.com/send/?phone=%2B918102832989" target="_blank" class="whatsapp-capsule w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
-            <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
-        </a>
+        <a href="tel:+918102832989" class="glass-call-btn w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg"><span class="material-symbols-outlined text-2xl">call</span></a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B918102832989" target="_blank" class="whatsapp-capsule w-14 h-14 rounded-full flex items-center justify-center shadow-lg"><svg class="w-8 h-8 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg></a>
     </div>
 
-    <!-- JavaScript logic to power the sliders -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            
-            // Reusable function to create fading sliders
             function createFadeSlider(containerId, slideClass, intervalTime) {
                 const container = document.getElementById(containerId);
                 if (!container) return;
-                
                 const slides = container.querySelectorAll(slideClass);
                 if (slides.length === 0) return;
-                
                 let currentIndex = 0;
-                
-                // Initialize first slide as visible
                 slides.forEach((slide, index) => {
                     slide.style.opacity = index === 0 ? '1' : '0';
                     slide.style.zIndex = index === 0 ? '1' : '0';
                 });
-
-                // Auto-advance logic
                 setInterval(() => {
-                    // Hide current
                     slides[currentIndex].style.opacity = '0';
                     slides[currentIndex].style.zIndex = '0';
-                    
-                    // Move to next
                     currentIndex = (currentIndex + 1) % slides.length;
-                    
-                    // Show next
                     slides[currentIndex].style.opacity = '1';
                     slides[currentIndex].style.zIndex = '1';
                 }, intervalTime);
             }
-
-            // Start Hero Slider (Changes every 4 seconds)
             createFadeSlider('hero-slider', '.hero-slide', 4000);
-            
-            // Start Expertise Slider (Changes every 3.5 seconds)
             createFadeSlider('expertise-slider', '.expertise-slide', 3500);
         });
     </script>
@@ -249,3 +137,4 @@
 
 
 ```
+        
