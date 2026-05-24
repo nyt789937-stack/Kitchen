@@ -33,14 +33,16 @@
         </div>
     </header>
 
-    <!-- Hero Section (Using Web Links so they work instantly) -->
+    <!-- Hero Section (Using your local Hero images) -->
     <section class="relative h-[85vh] w-full overflow-hidden mt-[72px]">
         <div id="hero-slider" class="relative w-full h-full bg-black">
-            <img class="hero-slide opacity-100" src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070&auto=format&fit=crop" alt="Luxury Kitchen 1">
-            <img class="hero-slide" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Luxury Kitchen 2">
-            <img class="hero-slide" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop" alt="Luxury Kitchen 3">
+            <img class="hero-slide opacity-100" src="hero1.webp" alt="Luxury Kitchen 1">
+            <img class="hero-slide" src="hero2.webp" alt="Luxury Kitchen 2">
+            <img class="hero-slide" src="hero3.webp" alt="Luxury Kitchen 3">
+            <img class="hero-slide" src="hero4.webp" alt="Luxury Kitchen 4">
+            <img class="hero-slide" src="hero5.webp" alt="Luxury Kitchen 5">
         </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10 pointer-events-none"></div>
         <div class="absolute inset-0 z-20 flex flex-col items-center justify-between text-center px-6 py-16">
             <h1 class="text-5xl md:text-7xl font-bold text-white mt-12 drop-shadow-2xl max-w-4xl leading-tight">
                 Modular <span class="luxury-gradient-text drop-shadow-2xl">Kitchens</span> in Patna
@@ -52,7 +54,28 @@
         </div>
     </section>
 
-    <!-- Expertise Section (Using Web Links) -->
+    <!-- Why Choose Us -->
+    <section class="py-16 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl text-center mb-10 font-medium text-white">Why <span class="font-bold luxury-gradient-text">Choose Us</span></h2>
+        <div class="border border-[#D4AF37]/30 p-8 bg-[#0a0a0a] rounded-xl shadow-[0_0_20px_rgba(212,175,55,0.05)]">
+            <div class="grid grid-cols-3 gap-4 md:gap-8 text-center items-start">
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined text-4xl text-[#D4AF37] mb-4">diamond</span>
+                    <h3 class="text-[10px] md:text-sm font-bold uppercase text-[#D4AF37] tracking-widest">Durability</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined text-4xl text-[#D4AF37] mb-4">explore</span>
+                    <h3 class="text-[10px] md:text-sm font-bold uppercase text-[#D4AF37] tracking-widest">Precision Design</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-symbols-outlined text-4xl text-[#D4AF37] mb-4">handyman</span>
+                    <h3 class="text-[10px] md:text-sm font-bold uppercase text-[#D4AF37] tracking-widest">Installation</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section (Using your local exp images) -->
     <section class="py-12 px-6 max-w-5xl mx-auto">
         <div class="mb-10 text-center">
             <h2 class="text-3xl text-white font-medium">Our <span class="font-bold luxury-gradient-text">Expertise</span></h2>
@@ -60,21 +83,33 @@
         <div class="relative w-full h-[50vh] overflow-hidden rounded-xl border border-gray-800 shadow-2xl bg-[#111]">
             <div id="expertise-slider" class="relative w-full h-full">
                 <div class="expertise-slide opacity-100">
-                    <img src="https://images.unsplash.com/photo-1556185781-a47769abb7ee?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover">
+                    <img src="exp1.webp" class="w-full h-full object-cover">
                     <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 text-center">
                         <h3 class="text-lg font-bold uppercase text-white tracking-[0.3em]">L-Shaped</h3>
                     </div>
                 </div>
                 <div class="expertise-slide">
-                    <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover">
+                    <img src="exp2.webp" class="w-full h-full object-cover">
                     <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 text-center">
                         <h3 class="text-lg font-bold uppercase text-white tracking-[0.3em]">U-Shaped</h3>
                     </div>
                 </div>
                 <div class="expertise-slide">
-                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover">
+                    <img src="exp3.webp" class="w-full h-full object-cover">
                     <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 text-center">
                         <h3 class="text-lg font-bold uppercase text-white tracking-[0.3em]">Island</h3>
+                    </div>
+                </div>
+                <div class="expertise-slide">
+                    <img src="exp4.webp" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 text-center">
+                        <h3 class="text-lg font-bold uppercase text-white tracking-[0.3em]">Parallel</h3>
+                    </div>
+                </div>
+                <div class="expertise-slide">
+                    <img src="exp5.webp" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-6 text-center">
+                        <h3 class="text-lg font-bold uppercase text-white tracking-[0.3em]">Straight</h3>
                     </div>
                 </div>
             </div>
@@ -137,4 +172,4 @@
 
 
 ```
-        
+                                                                                                                                                                                                                                          
